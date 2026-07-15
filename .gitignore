@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+
+# Dataset
+dataset/
+
+# Saved Models
+saved_models/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
