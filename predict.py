@@ -31,5 +31,5 @@ for i,idx in enumerate(indices):
     plt.title(f"Actual : {classes[label]}\n" f"Pred: {classes[predictions.item()]}\n " f"{confidence.item()*100:2f}%")
     plt.axis("off")
 plt.tight_layout()
-plt.savefig("predicted images/predictions.png")
+plt.savefig("predicted_images/predictions.png")
 plt.show()
