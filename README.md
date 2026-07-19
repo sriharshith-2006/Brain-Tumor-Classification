@@ -1,79 +1,108 @@
-# 🧠 Brain Tumor Classification using Convolutional Neural Networks (CNN)
+<div align="center">
 
-<p align="center">
+# 🧠 Brain Tumor Classification using CNN
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.7-red?style=for-the-badge&logo=pytorch)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge&logo=streamlit)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+### Deep Learning powered Brain MRI Tumor Detection & Classification
 
-</p>
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.7-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
----
+**[🌐 Live Demo](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)** · **[📂 Repository](https://github.com/sriharshith-2006/Brain-Tumor-Classification)** · **[👤 Author](https://github.com/sriharshith-2006)**
 
-# 📌 Overview
-
-Brain Tumor Classification is a Deep Learning project that automatically classifies Brain MRI scans into one of four categories using a Convolutional Neural Network (CNN).
-
-The application provides an interactive Streamlit interface where users can upload an MRI image and instantly receive the predicted tumor class along with the model's confidence score.
-
-This project demonstrates an end-to-end Deep Learning workflow including:
-
-- Data Preprocessing
-- CNN Model Development
-- Model Training
-- Model Evaluation
-- Prediction
-- Streamlit Web Application
-- Cloud Deployment
+</div>
 
 ---
 
-# 🚀 Live Demo
+## 📖 Table of Contents
 
-## 🌐 Streamlit Application
-
-https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/
-
----
-
-# 🎯 Features
-
-- 🧠 Brain MRI Classification
-- 📤 Upload MRI Images
-- ⚡ Instant Predictions
-- 📊 Confidence Score
-- 🎨 Modern Streamlit User Interface
-- 📱 Responsive Design
-- ☁️ Cloud Deployment
-- 🔄 Automatic Model Download using Google Drive
-- 💻 CPU Compatible
-
----
-
-# 🧠 Tumor Classes
-
-The CNN classifies MRI scans into the following four categories:
-
-| Class |
-|--------|
-| Glioma |
-| Meningioma |
-| No Tumor |
-| Pituitary |
+- [Overview](#-overview)
+- [Live Demo](#-live-demo)
+- [Features](#-features)
+- [Tumor Classes](#-tumor-classes)
+- [Project Structure](#️-project-structure)
+- [CNN Architecture](#️-cnn-architecture)
+- [Tech Stack](#️-tech-stack)
+- [Dataset](#-dataset)
+- [Model Pipeline](#-model-pipeline)
+- [Model Evaluation](#-model-evaluation)
+- [Installation](#-installation)
+- [Deployment](#-deployment)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
+- [Future Improvements](#-future-improvements)
+- [Disclaimer](#️-disclaimer)
+- [Author](#-author)
+- [Support](#-support)
+- [License](#-license)
 
 ---
 
-# 🏗️ Project Structure
+## 📌 Overview
+
+**Brain Tumor Classification** is an end-to-end Deep Learning project that automatically classifies Brain MRI scans into one of **four categories** using a Convolutional Neural Network (CNN).
+
+The application ships with an interactive **Streamlit** interface — upload an MRI image and instantly get back the predicted tumor class along with the model's confidence score.
+
+This project demonstrates a complete Deep Learning workflow:
+
+> `Data Preprocessing` → `CNN Development` → `Training` → `Evaluation` → `Prediction` → `Web App` → `Cloud Deployment`
+
+---
+
+## 🚀 Live Demo
+
+<div align="center">
+
+### 🌐 [Try the App on Streamlit →](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
+
+</div>
+
+---
+
+## 🎯 Features
+
+| | |
+|---|---|
+| 🧠 **Brain MRI Classification** | Classifies scans into 4 tumor categories |
+| 📤 **Drag & Drop Upload** | Upload any JPG/PNG MRI scan instantly |
+| ⚡ **Instant Predictions** | Results delivered in seconds |
+| 📊 **Confidence Score** | See exactly how sure the model is |
+| 🎨 **Modern UI** | Clean, gradient-based Streamlit interface |
+| 📱 **Responsive Design** | Works smoothly across screen sizes |
+| ☁️ **Cloud Deployment** | Live and hosted on Streamlit Cloud |
+| 🔄 **Auto Model Download** | Fetches trained weights from Google Drive |
+| 💻 **CPU Compatible** | No GPU required for inference |
+
+---
+
+## 🧠 Tumor Classes
+
+<div align="center">
+
+| Class | Description |
+|:---:|:---|
+| 🔴 **Glioma** | Tumor arising from glial cells in the brain/spine |
+| 🟠 **Meningioma** | Tumor forming in the meninges (brain's protective layers) |
+| 🟢 **No Tumor** | Healthy scan with no detected tumor |
+| 🔵 **Pituitary** | Tumor forming in the pituitary gland |
+
+</div>
+
+---
+
+## 🏗️ Project Structure
 
 ```text
 Brain-Tumor-Classification/
 │
-├── app.py                 # Streamlit application
-├── model.py               # CNN Architecture
-├── train.py                # Model Training
-├── test.py                 # Model Evaluation
-├── predict.py               # Prediction Script
+├── app.py                  # Streamlit application
+├── model.py                 # CNN Architecture
+├── train.py                  # Model Training
+├── test.py                   # Model Evaluation
+├── predict.py                 # Prediction Script
 │
 ├── outputs/
 │   ├── confusion_matrix.png
@@ -94,214 +123,189 @@ Brain-Tumor-Classification/
 ├── README.md
 │
 └── saved_models/
-    └── best_model.pth     # Downloaded automatically from Google Drive
+    └── best_model.pth      # Downloaded automatically from Google Drive
 ```
 
 ---
 
-# 🏛️ CNN Architecture
+## 🏛️ CNN Architecture
 
-The model consists of multiple deep learning layers including:
+The model is built from the following deep learning layers, stacked to progressively extract spatial features from MRI scans:
 
-- Convolution Layers
-- Batch Normalization
-- ReLU Activation
-- Max Pooling
-- Dropout
-- Fully Connected Layers
-- Softmax Output Layer
-
-The model is trained to classify MRI scans into four tumor categories.
-
----
-
-# ⚙️ Technologies Used
-
-## Programming Language
-
-- Python
-
-## Deep Learning
-
-- PyTorch
-- Torchvision
-
-## Web Framework
-
-- Streamlit
-
-## Data Processing
-
-- NumPy
-- Pandas
-
-## Visualization
-
-- Matplotlib
-
-## Image Processing
-
-- Pillow
-- OpenCV
-
-## Model Download
-
-- Google Drive
-- gdown
+```
+Input (224×224×3)
+   │
+   ├── Convolution Layers
+   ├── Batch Normalization
+   ├── ReLU Activation
+   ├── Max Pooling
+   ├── Dropout
+   ├── Fully Connected Layers
+   └── Softmax Output Layer
+   │
+Output (4 Classes)
+```
 
 ---
 
-# 📊 Dataset
+## ⚙️ Tech Stack
 
-The project uses a Brain MRI image dataset containing four classes:
+<div align="center">
+
+| Category | Tools |
+|---|---|
+| **Language** | Python |
+| **Deep Learning** | PyTorch, Torchvision |
+| **Web Framework** | Streamlit |
+| **Data Processing** | NumPy, Pandas |
+| **Visualization** | Matplotlib |
+| **Image Processing** | Pillow, OpenCV |
+| **Model Delivery** | Google Drive, gdown |
+
+</div>
+
+---
+
+## 📊 Dataset
+
+The project uses a **Brain MRI image dataset** spanning four classes:
 
 - Glioma
 - Meningioma
 - No Tumor
 - Pituitary
 
-### Image Size
-
-All MRI scans are resized to
-
-```
-224 × 224
-```
-
-before being passed to the CNN model.
+**Image Size:** All MRI scans are resized to `224 × 224` before being passed to the CNN model.
 
 ---
 
-# 🧪 Model Pipeline
+## 🧪 Model Pipeline
 
 ```text
 Brain MRI Image
         │
         ▼
-Image Upload
+   Image Upload
         │
         ▼
-Resize (224×224)
+ Resize (224×224)
         │
         ▼
-Tensor Conversion
+ Tensor Conversion
         │
         ▼
-CNN Model
+     CNN Model
         │
         ▼
-Softmax Layer
+   Softmax Layer
         │
         ▼
 Predicted Tumor Class
         │
         ▼
-Confidence Score
+  Confidence Score
 ```
 
 ---
 
-# 📈 Model Evaluation
+## 📈 Model Evaluation
 
-The trained model was evaluated using a separate test dataset.
+The trained model was evaluated on a held-out **test dataset**, measuring:
 
-Evaluation includes:
+- ✅ Classification Accuracy
+- ✅ Prediction Confidence
+- ✅ Confusion Matrix
 
-- Classification Accuracy
-- Prediction Confidence
-- Confusion Matrix
-
-Example prediction output:
+**Example prediction output:**
 
 ```
-Prediction:
-Glioma
-
-Confidence:
-98.74%
+Prediction : Glioma
+Confidence : 98.74%
 ```
 
 ### 🔍 Predictions on Random Test Samples
 
-Below are predictions made by the trained model on 10 randomly sampled images from the **test dataset**, showing the actual label vs. the predicted label along with the confidence score for each.
+Below are predictions made by the trained model on **10 randomly sampled images from the test dataset**, showing the actual label vs. the predicted label along with the confidence score for each.
 
-![Random Test Sample Predictions](assets/random_10_test_samples.png)
+<div align="center">
+<img src="assets/random_10_test_samples.png" alt="Random Test Sample Predictions" width="900"/>
+</div>
 
-*The model correctly predicts most samples with high confidence, including harder cases such as MRI images with different orientations (sagittal, axial, coronal) and even a non-MRI CT scan.*
+> The model correctly predicts most samples with high confidence — including harder cases across different MRI orientations (sagittal, axial, coronal) and even a non-MRI CT scan.
 
 ---
 
-# 📦 Installation
+## 📦 Installation
 
-## Clone Repository
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/sriharshith-2006/Brain-Tumor-Classification.git
 ```
 
-Move into project folder
+**2. Move into the project folder**
 
 ```bash
 cd Brain-Tumor-Classification
 ```
 
----
-
-## Install Dependencies
+**3. Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Run Application
+**4. Run the application**
 
 ```bash
 streamlit run app.py
 ```
 
-The application will automatically download the trained model during the first run.
+> The trained model will be downloaded automatically on first run.
 
 ---
 
-# 🌐 Deployment
+## 🌐 Deployment
 
-The application is deployed using **Streamlit Community Cloud**.
+The application is deployed on **Streamlit Community Cloud**.
 
-The trained model is **not included** in the repository because GitHub has a file size limit of 100 MB.
-
-Instead, the application downloads the trained model automatically from Google Drive when the app starts.
+Since GitHub enforces a 100 MB file size limit, the trained model (`best_model.pth`) is **not stored in the repository**. Instead, the app automatically downloads it from **Google Drive** via `gdown` when it starts up.
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
-## 🏠 Home Page
+### 🏠 Home Page
 
-The landing page introduces the app, explains what it does, and highlights the key features — drag & drop upload, instant results, the four supported tumor classes, and the confidence score.
+The landing page introduces the app and highlights its core features — drag & drop upload, instant results, the four supported tumor classes, and confidence scoring.
 
-![Home Page](assets/home.png)
-
----
-
-## 📤 Upload & Predict — Example 1 (No Tumor)
-
-A sagittal MRI scan uploaded and analyzed by the model, correctly predicted as **No Tumor** with **100.00% confidence**.
-
-![Upload and Predict — No Tumor Example](assets/example1.png)
+<div align="center">
+<img src="assets/home.png" alt="Home Page" width="900"/>
+</div>
 
 ---
 
-## 📤 Upload & Predict — Example 2 (Meningioma)
+### 📤 Upload & Predict — Example 1 · No Tumor
 
-An axial MRI scan uploaded and analyzed by the model, correctly predicted as **Meningioma** with **96.84% confidence**.
+A sagittal MRI scan uploaded and analyzed by the model — correctly predicted as **No Tumor** with **100.00% confidence**.
 
-![Upload and Predict — Meningioma Example](assets/example2.png)
+<div align="center">
+<img src="assets/example1.png" alt="Upload and Predict - No Tumor Example" width="900"/>
+</div>
 
 ---
 
-# 💻 Requirements
+### 📤 Upload & Predict — Example 2 · Meningioma
+
+An axial MRI scan uploaded and analyzed by the model — correctly predicted as **Meningioma** with **96.84% confidence**.
+
+<div align="center">
+<img src="assets/example2.png" alt="Upload and Predict - Meningioma Example" width="900"/>
+</div>
+
+---
+
+## 💻 Requirements
 
 ```
 torch==2.7.1
@@ -318,55 +322,52 @@ gdown==5.2.0
 
 ---
 
-# 🚀 Future Improvements
+## 🚀 Future Improvements
 
-- Grad-CAM Visualization
-- Better CNN Architecture
-- Faster Inference
-- Batch Image Prediction
-- REST API using FastAPI
-- Docker Deployment
-- Mobile Responsive Interface
-- Model Quantization
-- Multi-language Support
+- [ ] Grad-CAM Visualization
+- [ ] Better CNN Architecture
+- [ ] Faster Inference
+- [ ] Batch Image Prediction
+- [ ] REST API using FastAPI
+- [ ] Docker Deployment
+- [ ] Mobile Responsive Interface
+- [ ] Model Quantization
+- [ ] Multi-language Support
 
 ---
 
-# ⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This application is intended for **educational and research purposes only**.
 
-It should **not** be used as a substitute for professional medical diagnosis or clinical decision-making.
-
-Always consult qualified healthcare professionals for medical advice.
+It should **not** be used as a substitute for professional medical diagnosis or clinical decision-making. Always consult qualified healthcare professionals for medical advice.
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
-## Sriharshith Janga
+<div align="center">
+
+### Sriharshith Janga
 
 **B.Tech – Artificial Intelligence and Data Science**
-
 **IIIT Sri City**
 
-### GitHub
+[![GitHub](https://img.shields.io/badge/GitHub-sriharshith--2006-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sriharshith-2006)
 
-https://github.com/sriharshith-2006
+</div>
 
 ---
 
-# ⭐ Support
+## ⭐ Support
 
-If you found this project useful,
-
-please consider giving this repository a ⭐ on GitHub.
+If you found this project useful, please consider giving this repository a **⭐ on GitHub**.
 
 It helps others discover the project and supports future improvements.
 
 ---
 
-# 📄 License
+## 📄 License
 
 This project is licensed under the **MIT License**.
 
