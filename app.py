@@ -1,9 +1,17 @@
 import streamlit as st
 import torch
+import os
+import gdown
 from torchvision import transforms
 from PIL import Image
 from model import CNN_Model
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
+MODEL_PATH="saved_models/best_model.pth"
+MODEL_URL="https://drive.google.com/uc?id=1ylfCWm6Dfl13rZLYeYoCmQFxx3MJwe-8"
+if not os.path.exists(MODEL_PATH):
+    os.makedirs("saved_models",exist_ok=True)
+    with st.spinner("Downloading Model...."):
+        gdown.download(MODEL_URL,MODEL_PATH,quiet=False)
 classes = [
     "Glioma",
     "Meningioma",
@@ -394,7 +402,7 @@ elif page == "Upload and predict":
                     ])
                     model = CNN_Model().to(device)
                     model.load_state_dict(
-                        torch.load("saved_models/best_model.pth", map_location=device)
+                        torch.load(MODEL_PATH, map_location=device)
                     )
                     model.eval()
                     input_image = transform(image).unsqueeze(0)
