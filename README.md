@@ -10,7 +10,9 @@
 ![License](https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-**[🌐 Live Demo](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)** · **[📂 Repository](https://github.com/sriharshith-2006/Brain-Tumor-Classification)** · **[👤 Author](https://github.com/sriharshith-2006)**
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Open_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
+[![Repository](https://img.shields.io/badge/📂_Repository-View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sriharshith-2006/Brain-Tumor-Classification)
+[![Author](https://img.shields.io/badge/👤_Author-sriharshith--2006-2ECC71?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sriharshith-2006)
 
 </div>
 
@@ -55,6 +57,8 @@ This project demonstrates a complete Deep Learning workflow:
 ## 🚀 Live Demo
 
 <div align="center">
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
 
 ### 🌐 [Try the App on Streamlit →](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
 
@@ -111,11 +115,11 @@ Brain-Tumor-Classification/
 ├── predicted_images/
 │   └── predictions.png
 │
-├── assets/
+├── assests/
 │   ├── home.png
 │   ├── example1.png
 │   ├── example2.png
-│   └── random_10_test_samples.png
+│   └── random 10 test samples.png
 │
 ├── requirements.txt
 ├── runtime.txt
@@ -228,7 +232,7 @@ Confidence : 98.74%
 Below are predictions made by the trained model on **10 randomly sampled images from the test dataset**, showing the actual label vs. the predicted label along with the confidence score for each.
 
 <div align="center">
-<img src="assets/random_10_test_samples.png" alt="Random Test Sample Predictions" width="900"/>
+<img src="assests/random 10 test samples.png" alt="Random Test Sample Predictions" width="900"/>
 </div>
 
 > The model correctly predicts most samples with high confidence — including harder cases across different MRI orientations (sagittal, axial, coronal) and even a non-MRI CT scan.
@@ -280,7 +284,7 @@ Since GitHub enforces a 100 MB file size limit, the trained model (`best_model.p
 The landing page introduces the app and highlights its core features — drag & drop upload, instant results, the four supported tumor classes, and confidence scoring.
 
 <div align="center">
-<img src="assets/home.png" alt="Home Page" width="900"/>
+<img src="assests/home.png" alt="Home Page" width="900"/>
 </div>
 
 ---
@@ -290,7 +294,7 @@ The landing page introduces the app and highlights its core features — drag & 
 A sagittal MRI scan uploaded and analyzed by the model — correctly predicted as **No Tumor** with **100.00% confidence**.
 
 <div align="center">
-<img src="assets/example1.png" alt="Upload and Predict - No Tumor Example" width="900"/>
+<img src="assests/example1.png" alt="Upload and Predict - No Tumor Example" width="900"/>
 </div>
 
 ---
@@ -300,7 +304,7 @@ A sagittal MRI scan uploaded and analyzed by the model — correctly predicted a
 An axial MRI scan uploaded and analyzed by the model — correctly predicted as **Meningioma** with **96.84% confidence**.
 
 <div align="center">
-<img src="assets/example2.png" alt="Upload and Predict - Meningioma Example" width="900"/>
+<img src="assests/example2.png" alt="Upload and Predict - Meningioma Example" width="900"/>
 </div>
 
 ---
