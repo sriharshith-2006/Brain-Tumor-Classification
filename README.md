@@ -29,7 +29,6 @@
 - [Deployment](#-deployment)
 - [Screenshots](#-screenshots)
 - [Requirements](#-requirements)
-- [Future Improvements](#-future-improvements)
 - [Disclaimer](#️-disclaimer)
 - [Author](#-author)
 - [Support](#-support)
@@ -53,7 +52,9 @@ This project demonstrates a complete Deep Learning workflow:
 
 <div align="center">
 
-🌐 **Live App:** https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/
+### 🌐 Live App
+
+# https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/
 
 </div>
 
@@ -316,20 +317,6 @@ pillow==11.3.0
 opencv-python-headless==4.12.0.88
 gdown==5.2.0
 ```
-
----
-
-## 🚀 Future Improvements
-
-- [ ] Grad-CAM Visualization
-- [ ] Better CNN Architecture
-- [ ] Faster Inference
-- [ ] Batch Image Prediction
-- [ ] REST API using FastAPI
-- [ ] Docker Deployment
-- [ ] Mobile Responsive Interface
-- [ ] Model Quantization
-- [ ] Multi-language Support
 
 ---
 
