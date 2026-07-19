@@ -1,5 +1,9 @@
 torch==2.7.1
 torchvision==0.22.1
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.7.1+cpu
+torchvision==0.22.1+cpu
+>>>>>>> 0dd196a (Requirements)
 streamlit==1.49.1
 numpy==2.2.6
 pandas==2.3.2
