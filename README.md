@@ -50,11 +50,17 @@ This project demonstrates a complete Deep Learning workflow:
 
 ## 🚀 Live Demo
 
+<br>
+
 <div align="center">
+
+### 🌐 Live App
 
 🌐 **Live App:** [brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
 
 </div>
+
+<br>
 
 ---
 
