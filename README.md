@@ -52,9 +52,7 @@ This project demonstrates a complete Deep Learning workflow:
 
 <div align="center">
 
-### 🌐 Live App
-
-# https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/
+🌐 **Live App:** [brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
 
 </div>
 
