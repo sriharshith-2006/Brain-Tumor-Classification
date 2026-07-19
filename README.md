@@ -6,13 +6,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.7-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Open_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
-[![Repository](https://img.shields.io/badge/📂_Repository-View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sriharshith-2006/Brain-Tumor-Classification)
-[![Author](https://img.shields.io/badge/👤_Author-sriharshith--2006-2ECC71?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sriharshith-2006)
 
 </div>
 
@@ -58,9 +53,7 @@ This project demonstrates a complete Deep Learning workflow:
 
 <div align="center">
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
-
-### 🌐 [Try the App on Streamlit →](https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/)
+🌐 **Live App:** https://brain-tumor-classification-bmnjnasr2wt6bqzzvcymig.streamlit.app/
 
 </div>
 
